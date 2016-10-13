@@ -43,7 +43,7 @@ android {
                         def outputFile = output.outputFile
                         if (outputFile != null && outputFile.name.endsWith('release.apk')) {
                             def fileName = "testJenkins_${defaultConfig.versionName}.apk"
-                            output.outputFile = new File("C:\\japk", fileName)
+                            output.outputFile = new File("/usr/local/", fileName)
                         }
                     }
                 }
